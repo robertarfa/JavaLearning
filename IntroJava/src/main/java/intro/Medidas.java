@@ -11,8 +11,12 @@ public class Medidas {
     // funcao static void main eh a primeira funcao a ser carregada
     // void eh um metodo - vai receber valores
     public static void main(String[] args){
-        System.out.println("Meu primeiro console em Java!!");
+        System.out.println("sSut atalho para system.out.println");
         System.out.print("Mais uma linha!");
         System.out.print("Esse nao vai pular a linha!");
+
+        //Calculo de area - Exemplo: o tamanho do tapete ou piso
+
+
     }
 }
