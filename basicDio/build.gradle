@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+    id 'pmd'
+}
+
+group 'basicDio'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.11
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+pmd {
+    consoleOutput = true
+    toolVersion = "6.35.0"
+    rulePriority = 5
+    ruleSetFiles = files("pmd-ruleset.xml")
+    ruleSets = []
+    ruleSets = ["category/java/bestpractices.xml"]
+    ignoreFailures = true
+}
+
+checkstyle {
+    toolVersion "8.43"
+    //showViolation = true
+    configFile file("google_checks.xml")
+}
