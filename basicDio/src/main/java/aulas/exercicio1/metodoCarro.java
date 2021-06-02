@@ -8,6 +8,8 @@ public class metodoCarro {
         System.out.println(carro.getNumeroPessoasNoCarro());
         System.out.println(carro.addPessoasNoCarro());
         System.out.println("Quantas pessoas tem no carro? " + carro.numeroPessoasNoCarro);
+        System.out.println(carro.addPessoasNoCarro());
+        System.out.println("Quantas pessoas tem no carro? " + carro.numeroPessoasNoCarro);
         System.out.println(carro.removePessoasNoCarro());
         System.out.println("Quantas pessoas tem no carro? " + carro.numeroPessoasNoCarro);
     }

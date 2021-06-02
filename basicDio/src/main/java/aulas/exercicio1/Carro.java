@@ -8,7 +8,7 @@ public class Carro {
   }
 
   public int addPessoasNoCarro(){
-      return numeroPessoasNoCarro =+ 1;
+      return numeroPessoasNoCarro = numeroPessoasNoCarro+ 1;
   }
 
     public int removePessoasNoCarro(){
