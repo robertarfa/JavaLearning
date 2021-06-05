@@ -17,12 +17,17 @@ public class Medidas {
         System.out.println("***Args funciona como uma caixinha para guardar valores***");
         //System.out.print("***Esse nao vai pular a linha!***");
 
-        Medidas m = new Medidas();
-        m.calcularAreaModoExtenso();
-        m.calcularAreaModoCompacto();
+//        Medidas m = new Medidas();
+//        m.calcularAreaModoExtenso();
+//        m.calcularAreaModoCompacto();
+
+        //com static
+        calcularAreaModoExtenso();
+        calcularAreaModoCompacto();
     }
 
-    public void calcularAreaModoExtenso(){
+
+    public static void calcularAreaModoExtenso(){
         //Calculo de area - Exemplo: o tamanho do tapete ou piso
         int largura;
         int comprimento;
@@ -32,17 +37,17 @@ public class Medidas {
         comprimento = 3;
 
         resultado = largura * comprimento;
-        System.out.println("Para a largura de "+ largura +
+        System.out.println("Extenso - Para a largura de "+ largura +
                 "m e o comprimento de " + comprimento + "m" +
                 " a area eh de " + resultado + " m²");
     }
 
-    public void calcularAreaModoCompacto(){
+    public static void calcularAreaModoCompacto(){
         //Calculo de area - Reduzido
         int largura = 4;
         int comprimento = 3;
 
-        System.out.println("Para a largura de "+ largura +
+        System.out.println("Compacto - Para a largura de "+ largura +
                 "m e o comprimento de " + comprimento + "m" +
                 " a area eh de " + largura * comprimento + " m²");
 
